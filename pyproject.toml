@@ -4,6 +4,7 @@ description = "Make ComfyUI generates 3D assets as good & convenient as it gener
 version = "0.1.2"
 license = { file = "LICENSE" }
 dynamic = ["dependencies"]
+
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
@@ -14,3 +15,12 @@ Repository = "https://github.com/MrForExample/ComfyUI-3D-Pack"
 PublisherId = "mr-for-example"
 DisplayName = "ComfyUI-3D-Pack"
 Icon = ""
+
+
+[tool.setuptools]
+packages = [
+  "comfyui_3d_pack",
+]
+
+[tool.setuptools.package-dir]
+"comfyui_3d_pack" = "."
